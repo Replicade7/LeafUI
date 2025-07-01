@@ -12,7 +12,7 @@ local Leaf = loadstring(game:HttpGet("https://raw.githubusercontent.com/Replicad
 local Window = Leaf:CreateWindow({
     Name = "Your UI Name",
     LogoID = "rbxassetid://12345678",  -- Image ID
-    Color = {100, 143, 52}  -- RGB values
+    Color = {183, 255, 128}  -- RGB values
 })
 ```
 
