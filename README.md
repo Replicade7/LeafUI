@@ -110,3 +110,13 @@ MainTab:CreateDropdown({
     end
 })
 ```
+
+### **Input**  
+```lua
+MainTab:Input({
+    Title = "Name",
+    Callback = function(text)
+        fileNameInput = text
+    end
+})
+```
