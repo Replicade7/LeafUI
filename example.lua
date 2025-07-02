@@ -74,6 +74,21 @@ MiscTab:Button({
     end
 })
 
+MiscTab:Input({
+    Title = "Name",
+    Callback = function(text)
+        fileNameInput = text
+    end
+})
+
+MiscTab:CreateColorPicker({
+    Name = "Menu Color",
+    Color = Leaf.MenuColorValue.Value,
+    Callback = function(color)
+        Leaf.MenuColorValue.Value = color
+    end
+})
+
 VisualTab:Toggle({
     Title = "Sceleton",
     Default = false,
