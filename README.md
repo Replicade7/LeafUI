@@ -1,4 +1,4 @@
-# LeafUI Release Version 2.0 ✨  
+# LeafUI Release Version 2.1 ✨  
 **A lightweight, modern UI library for Roblox Executors**  
 
 ---
