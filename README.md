@@ -1,4 +1,4 @@
-# LeafUI Release Version 2.1 ✨  
+# LeafUI Release Version 2.5 ✨  
 **A lightweight, modern UI library for Roblox Executors**  
 
 ---
@@ -21,6 +21,22 @@ local Window = Leaf:CreateWindow({
 local MainTab = Window:CreateTab({
     Image = "rbxassetid://6031079158",  -- Tab icon
     Opened = true  -- Default open state
+})
+```
+
+### **SubTabs System**  
+```lua
+local SettingsSubTab = MainTab:CreateSubTab({ 
+    Name = "Silent", 
+    Opened = true
+})
+
+SettingsSubTab:Button({
+    Title = "Enable Feature",
+    Active = 3,
+    Callback = function()
+        print("Button clicked!")
+    end
 })
 ```
 
