@@ -1,7 +1,7 @@
 local Leaf = loadstring(game:HttpGet("https://raw.githubusercontent.com/Replicade7/LeafUI/refs/heads/main/main.lua"))()
 
 local Window = Leaf:CreateWindow({
-    Name = "Lucky Leaf",
+    Name = {"Lucky Leaf" ,"Alpha" , "1.4.4"},
     LogoID = "115881046708353",
     Folder = "LeafFolder",
     Color = {182, 255, 128}
@@ -9,6 +9,11 @@ local Window = Leaf:CreateWindow({
 
 local VisualTab = Window:CreateTab({
     Image = "rbxassetid://6031079158",
+    Opened = true
+})
+
+local ESPSubTab = VisualTab:CreateSubTab({ 
+    Name = "Visuals", 
     Opened = true
 })
 
@@ -25,9 +30,9 @@ local MiscTab = Window:CreateTab({
 local ViewBox = "2D"
 local ESP_Color = Color3.new(1, 1, 1)
 
-VisualTab:Section({ Title = "ESP" })
+ESPSubTab:Section({ Title = "ESP" })
 
-VisualTab:Button({
+ESPSubTab:Button({
     Title = "Enabled",
     Active = 3,
     Callback = function()
@@ -35,7 +40,7 @@ VisualTab:Button({
     end
 })
 
-VisualTab:CreateColorPicker({
+ESPSubTab:CreateColorPicker({
     Name = "ESP Color",
     Color = ESP_Color,
     Callback = function(color)
@@ -43,7 +48,7 @@ VisualTab:CreateColorPicker({
     end
 })
 
-VisualTab:CreateDropdown({
+ESPSubTab:CreateDropdown({
     Name = "View Box",
     Options = {"2D", "3D", "Corner"},
     CurrentOption = ViewBox,
@@ -52,7 +57,7 @@ VisualTab:CreateDropdown({
     end
 })
 
-VisualTab:DeButton({
+ESPSubTab:DeButton({
     Title = "Submit",
     Callback = function()
         print("Visual Submitted!")
@@ -90,7 +95,7 @@ MiscTab:CreateColorPicker({
     end
 })
 
-VisualTab:Toggle({
+ESPSubTab:Toggle({
     Title = "Sceleton",
     Default = false,
     Callback = function(state)
@@ -98,7 +103,7 @@ VisualTab:Toggle({
     end
 })
 
-VisualTab:Slider({
+ESPSubTab:Slider({
     Title = "Thickness",
     Value = {
         Min = 0,
