@@ -10,9 +10,10 @@
 local Leaf = loadstring(game:HttpGet("https://raw.githubusercontent.com/Replicade7/LeafUI/refs/heads/main/main.lua"))()
 
 local Window = Leaf:CreateWindow({
-    Name = "Your UI Name",
-    LogoID = "115881046708353",  -- Image ID
-    Color = {183, 255, 128}  -- RGB values
+    Name = {"Lucky Leaf" ,"Alpha" , "1.4.4"},
+    LogoID = "115881046708353",
+    Folder = "LeafFolder",
+    Color = {182, 255, 128}
 })
 ```
 
